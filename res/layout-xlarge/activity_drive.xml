@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:id="@+id/relie">
+
+    <VideoView
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:gravity="center"    
+         android:id="@+id/videoview" 
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true"/>
+
+    <com.seniordesign.rccontroller.Slider
+        android:id="@+id/accSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:progressDrawable="@drawable/progressbar" />
+   
+    <FrameLayout
+        android:id="@+id/wheel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/accSlider"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+       />
+
+</RelativeLayout>
